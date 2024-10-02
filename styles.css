@@ -1,0 +1,15 @@
+/* styles.css */
+
+/* Style for the follower count div */
+.follower-count {
+    font-size: 12px;
+    color: #555;
+    margin-top: 4px;
+    /* Optional: Add more styling to match LinkedIn's design */
+  }
+  
+  /* Optional: Add hover effects or icons */
+  .follower-count::before {
+    content: '👥 '; /* Follower icon */
+  }
+  
