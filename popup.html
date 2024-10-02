@@ -1,0 +1,45 @@
+<!-- popup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Follower Count Enhancer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 10px;
+    }
+    #fetchButton {
+      padding: 10px 20px;
+      background-color: #0073b1;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    #fetchButton:hover {
+      background-color: #005582;
+    }
+    #log {
+      margin-top: 10px;
+      max-height: 200px;
+      overflow-y: auto;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>Follower Count Enhancer</h2>
+  <button id="fetchButton">Fetch Follower Counts</button>
+  <div id="log"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

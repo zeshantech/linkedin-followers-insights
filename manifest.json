@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LinkedIn Follower Count Enhancer",
   "description": "Displays LinkedIn profile followers count on profile cards within the My Network tab.",
-  "version": "1.0",
+  "version": "1.1",
   "permissions": [
     "activeTab",
     "scripting",
@@ -21,12 +21,18 @@
   "background": {
     "service_worker": "background.js"
   },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LinkedIn Follower Count Enhancer",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
-  },
-  "action": {
-    "default_title": "LinkedIn Follower Count Enhancer"
   }
 }
