@@ -2,17 +2,17 @@
 
 /* Style for the follower count div */
 .follower-count {
-    font-size: 12px;
-    color: #555;
-    margin-top: 4px;
-    /* Optional: Add more styling to match LinkedIn's design */
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Optional: Add a follower icon before the count */
-  .follower-count::before {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+  /* Optional: Add more styling to match LinkedIn's design */
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: Add a follower icon before the count */
+.follower-count::before {
     content: '👥 '; /* Follower icon */
-    margin-right: 4px;
-  }
+  margin-right: 4px;
+}
   

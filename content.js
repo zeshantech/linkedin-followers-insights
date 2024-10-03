@@ -5,7 +5,7 @@ console.log("[Content] Content script loaded.");
 // Listener for messages from popup or background
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   console.log(`[Content] Received message: ${JSON.stringify(request)}`);
-  
+
   if (request.type === 'START_FETCH') {
     console.log("[Content] Starting follower count fetch process.");
     processProfileCards();
@@ -31,6 +31,7 @@ function getProfileCards() {
   return cards;
 }
 
+
 // Function to add follower count to a profile card
 async function addFollowerCountToCard(card) {
   if (card.dataset.followerAdded) {
@@ -38,7 +39,7 @@ async function addFollowerCountToCard(card) {
     return; // Prevent duplicate processing
   }
   card.dataset.followerAdded = true;
-  
+
   const profileUrl = card.href.split('?')[0].replace(/\/$/, ''); // Standardize URL
   console.log(`[Content] Processing profile URL: ${profileUrl}`);
 
@@ -50,8 +51,7 @@ async function addFollowerCountToCard(card) {
         console.error(`[Content] Error in sendMessage: ${chrome.runtime.lastError.message}`);
         return;
       }
-      console.log(response, "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-      
+
       const count = response.count;
       if (count) {
         console.log(`[Content] Received follower count for ${profileUrl}: ${count}`);
@@ -82,7 +82,7 @@ const processProfileCards = debounce(() => {
 // Initialize the script
 function init() {
   console.log("[Content] Initializing content script...");
-  
+
   // Optionally, automatically start processing on page load
   // processProfileCards();
 

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "LinkedIn Follower Count Enhancer",
   "description": "Displays LinkedIn profile followers count on profile cards within the My Network tab.",
-  "version": "1.1",
+  "version": "1.2",
   "permissions": [
     "activeTab",
     "scripting",
